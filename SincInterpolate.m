@@ -15,6 +15,10 @@ interpolated = zeros(t_len, 1);
 for t=1:t_len
     % Sum over n range
     for n=0:size(x_n, 2)-1
+        if (time_range(t) - (nstart+n) * T == 0)
+            interpolated(t) = x_n(n+1);
+            break;
+        end
         arg = (pi*(time_range(t) - (nstart+n) * T))/T;
         sinc = sin(arg)/arg;
         interpolated(t) = interpolated(t) + sinc*x_n(n+1);
