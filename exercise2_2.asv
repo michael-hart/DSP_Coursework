@@ -1,0 +1,9 @@
+% Function is e^(-jn/3)
+% n is 0:15
+n = 0:15;
+x_n = exp(-1i .* n ./ 3);
+X = fft(x_n);
+
+figure
+subplot(2,1,1);
+plot(n,abs(x_n));
