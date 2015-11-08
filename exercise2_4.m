@@ -29,6 +29,7 @@ for i=1:N
     xlabel('Sample Number');
     ylabel('Phase');
     
+    % Print whether sample is real or complex.
     txt_real = 'not ';
     if (isreal(X{i}))
         txt_real = '';
