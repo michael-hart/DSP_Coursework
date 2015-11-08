@@ -21,7 +21,6 @@ end
 
 % Add titles, labels and legends
 subplot(2,1,1);
-mag_legends = strcat('Delayed  by ', int2str(0:7));
 legend(legend_vals);
 xlabel('Sample Number');
 ylabel('Magnitude');
