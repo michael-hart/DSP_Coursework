@@ -5,6 +5,8 @@
 % (ii)      a = [1, 0.9];                       b = [1];
 % (iii)     a = [1, -1.8*cos(pi/5), 0.81];  	b = [1, 0.5];
 
+% Still requires analytical expressions for all parts.
+
 % Generate input impulse
 x = zeros(1024, 1);
 x(1) = 1;
